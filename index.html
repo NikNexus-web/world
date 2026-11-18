@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AASHI | A World Beyond Distance</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- BACKGROUND -->
+    <div class="background-glow"></div>
+    <div id="particles"></div>
+
+    <!-- MUSIC -->
+    <audio id="bgMusic" src="aashi.mp3" loop preload="auto"></audio>
+
+    <button class="music-button" onclick="toggleMusic()">
+        <span id="musicIcon">♫</span>
+        <span id="musicText">PLAY MUSIC</span>
+    </button>
+
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+
+        <div class="hero-nav">
+            <span>A / 01</span>
+            <span>A LITTLE WORLD MADE WITH LOVE</span>
+            <span>2026 ©</span>
+        </div>
+
+        <div class="hero-content">
+
+            <div class="hero-symbol">✦</div>
+
+            <p class="eyebrow">AN IMPORTANT PERSON DESERVES A SPECIAL PLACE</p>
+
+            <h1>
+                THIS WORLD<br>
+                IS FOR <span>AASHI.</span>
+            </h1>
+
+            <div class="hero-line"></div>
+
+            <p class="hero-description">
+                Different places. Different journeys.<br>
+                But always connected by something beautiful.
+            </p>
+
+            <button class="enter-button" onclick="enterWebsite()">
+                <span>DISCOVER YOUR WORLD</span>
+                <span>↗</span>
+            </button>
+
+            <p class="hero-signature">
+                Created by your annoying brother — Nikunj.
+            </p>
+
+        </div>
+
+        <div class="hero-decoration decoration-one">A</div>
+        <div class="hero-decoration decoration-two">♡</div>
+
+        <div class="hero-bottom">
+            <span>MADE ESPECIALLY FOR YOU</span>
+            <span>SCROLL TO EXPLORE ↓</span>
+        </div>
+
+    </section>
+
+
+    <!-- MAIN WEBSITE -->
+    <main id="mainContent" class="hidden">
+
+
+        <!-- INTRODUCTION -->
+        <section class="intro section">
+
+            <div class="section-label">01 — A LITTLE INTRODUCTION</div>
+
+            <div class="intro-content">
+
+                <p class="eyebrow">HEY, LITTLE TROUBLEMAKER.</p>
+
+                <h2>
+                    Another journey.<br>
+                    <i>Another chapter.</i>
+                </h2>
+
+                <p>
+                    Sooo, you're going back to hostel again.
+
+                    A new place, new memories and new experiences.
+
+                    But before you leave, your annoying brother
+                    wanted to remind you of something.
+
+                    No matter how far you go, you will always
+                    have someone waiting for you back home.
+
+                    And yes, someone who will never stop
+                    irritating you. 😂
+                </p>
+
+                <div class="intro-signature">
+                    You are loved. Always.
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- MEMORIES -->
+        <section class="memories section">
+
+            <div class="section-label">02 — THE MEMORY ARCHIVE</div>
+
+            <div class="section-heading">
+
+                <p class="eyebrow">A COLLECTION OF MOMENTS</p>
+
+                <h2>
+                    Beautiful memories.<br>
+                    <i>One special person.</i>
+                </h2>
+
+                <p>
+                    Some moments deserve to stay forever.
+                </p>
+
+            </div>
+
+
+            <div class="photo-grid">
+
+                <div class="photo-card">
+
+                    <div class="photo-number">01 / MEMORY</div>
+
+                    <img src="Aashi 1.jpeg" alt="Aashi">
+
+                    <div class="photo-caption">
+                        <span>THE SUNSHINE</span>
+                        <p>One of a kind. ♡</p>
+                    </div>
+
+                </div>
+
+
+                <div class="photo-card">
+
+                    <div class="photo-number">02 / MEMORY</div>
+
+                    <img src="Aashi 2.jpeg" alt="Aashi">
+
+                    <div class="photo-caption">
+                        <span>THE SMILE</span>
+                        <p>Always keep smiling.</p>
+                    </div>
+
+                </div>
+
+
+                <div class="photo-card">
+
+                    <div class="photo-number">03 / MEMORY</div>
+
+                    <img src="Aashi 3.jpeg" alt="Aashi">
+
+                    <div class="photo-caption">
+                        <span>THE MOMENT</span>
+                        <p>Simply unforgettable.</p>
+                    </div>
+
+                </div>
+
+
+                <div class="photo-card">
+
+                    <div class="photo-number">04 / MEMORY</div>
+
+                    <img src="Aashi4.jpeg" alt="Aashi">
+
+                    <div class="photo-caption">
+                        <span>THE LITTLE ONE</span>
+                        <p>Forever special. ❤️</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- LETTERS -->
+        <section class="letters section">
+
+            <div class="section-label">03 — PRIVATE MESSAGES</div>
+
+            <div class="section-heading">
+
+                <p class="eyebrow">SOME WORDS FOR SOME MOMENTS</p>
+
+                <h2>
+                    OPEN WHEN...<br>
+                    <i>You need a little love.</i>
+                </h2>
+
+            </div>
+
+
+            <div class="letter-grid">
+
+                <button class="letter-card" onclick="openLetter(0)">
+
+                    <span class="letter-icon">01</span>
+
+                    <span class="letter-emoji">🏡</span>
+
+                    <h3>Missing Home?</h3>
+
+                    <p>OPEN YOUR MESSAGE ↗</p>
+
+                </button>
+
+
+                <button class="letter-card" onclick="openLetter(1)">
+
+                    <span class="letter-icon">02</span>
+
+                    <span class="letter-emoji">🖤</span>
+
+                    <h3>Feeling Low?</h3>
+
+                    <p>OPEN YOUR MESSAGE ↗</p>
+
+                </button>
+
+
+                <button class="letter-card" onclick="openLetter(2)">
+
+                    <span class="letter-icon">03</span>
+
+                    <span class="letter-emoji">😂</span>
+
+                    <h3>Missing Me?</h3>
+
+                    <p>OPEN YOUR MESSAGE ↗</p>
+
+                </button>
+
+
+                <button class="letter-card" onclick="openLetter(3)">
+
+                    <span class="letter-icon">04</span>
+
+                    <span class="letter-emoji">✨</span>
+
+                    <h3>Need Motivation?</h3>
+
+                    <p>OPEN YOUR MESSAGE ↗</p>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- SPECIAL SURPRISE -->
+        <section class="special section">
+
+            <div class="section-label">04 — SPECIAL DELIVERY</div>
+
+            <div class="special-container">
+
+                <div class="special-left">
+
+                    <p class="eyebrow">A MESSAGE FROM YOUR BROTHER</p>
+
+                    <h2>
+                        A hug that<br>
+                        <i>travels miles.</i>
+                    </h2>
+
+                    <p>
+                        Distance cannot stop a brother
+                        from sending a little love.
+
+                        Ready for your surprise?
+                    </p>
+
+                    <button onclick="sendHug()">
+                        UNLOCK SURPRISE ↗
+                    </button>
+
+                </div>
+
+                <div class="special-right">
+
+                    <div class="orbit orbit-one"></div>
+                    <div class="orbit orbit-two"></div>
+
+                    <div class="special-teddy">🧸</div>
+
+                    <span class="floating-heart">♥</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- REMINDERS -->
+        <section class="reminders section">
+
+            <div class="section-label">05 — IMPORTANT REMINDERS</div>
+
+            <div class="section-heading">
+
+                <p class="eyebrow">A FEW THINGS TO REMEMBER</p>
+
+                <h2>
+                    Take care of<br>
+                    <i>yourself, okay?</i>
+                </h2>
+
+            </div>
+
+            <div class="reminder-list">
+
+                <div>
+                    <span>01</span>
+                    <p>Eat properly. No skipping meals.</p>
+                    <b>♡</b>
+                </div>
+
+                <div>
+                    <span>02</span>
+                    <p>Sleep on time and take enough rest.</p>
+                    <b>♡</b>
+                </div>
+
+                <div>
+                    <span>03</span>
+                    <p>Study hard and believe in yourself.</p>
+                    <b>♡</b>
+                </div>
+
+                <div>
+                    <span>04</span>
+                    <p>Whenever you need me, just call.</p>
+                    <b>♡</b>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FINAL -->
+        <section class="final section">
+
+            <div class="final-star">✦</div>
+
+            <p class="eyebrow">UNTIL WE MEET AGAIN</p>
+
+            <h2>
+                Distance changes<br>
+                nothing.
+            </h2>
+
+            <p class="final-message">
+                Go explore the world.
+
+                Make beautiful memories.
+
+                Chase your dreams.
+
+                And never forget that you have
+                someone cheering for you back home.
+            </p>
+
+            <div class="final-heart">♥</div>
+
+            <h3>Love you, Aashi.</h3>
+
+            <div class="final-signature">
+                YOUR ANNOYING BROTHER<br>
+                <span>NIKUNJ.</span>
+            </div>
+
+            <div class="final-footer">
+                THIS LITTLE WORLD WILL ALWAYS BE YOURS.
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- LETTER POPUP -->
+    <div class="modal" id="letterModal">
+
+        <div class="modal-box">
+
+            <button class="close-button" onclick="closeLetter()">×</button>
+
+            <div class="modal-top">A PRIVATE MESSAGE ♡</div>
+
+            <div id="modalIcon" class="modal-icon">💌</div>
+
+            <h2 id="modalTitle">Dear Aashi...</h2>
+
+            <p id="modalMessage"></p>
+
+            <div class="modal-footer">
+                ALWAYS YOUR BROTHER — NIKUNJ
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- HUG POPUP -->
+    <div class="hug-screen" id="hugScreen">
+
+        <div class="hug-box">
+
+            <button class="close-button" onclick="closeHug()">×</button>
+
+            <div class="hug-top">A SPECIAL DELIVERY FOR AASHI</div>
+
+            <div class="hug-teddy" id="hugTeddy">🧸</div>
+
+            <h2>
+                Sending you<br>
+                <i>the biggest hug!</i>
+            </h2>
+
+            <p id="hugMessage">
+                A little hug from your annoying brother.
+            </p>
+
+            <div id="hugHearts"></div>
+
+            <button class="hug-again" onclick="sendHug()">
+                ONE MORE HUG? ♥
+            </button>
+
+            <div class="hug-bottom">
+                MADE WITH INFINITE LOVE.
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
